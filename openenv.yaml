@@ -1,0 +1,14 @@
+name: traffic-signal-control
+version: "1.0.0"
+sdk: docker
+app_port: 7860
+tasks:
+  - name: easy
+    target_throughput: 40
+    target_emergencies: 3
+  - name: medium
+    target_throughput: 80
+    target_emergencies: 5
+  - name: hard
+    target_throughput: 120
+    target_emergencies: 7
